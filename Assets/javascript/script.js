@@ -5,7 +5,7 @@ var alphaLower = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p
 var alphaUpper = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U",
 "V","W","X","Y","Z"]
 var numbers = [0,1,2,3,4,5,6,7,8,9];
-var specialCharacters = ["!", "#", "$", "%", "&", "'", "(", ")", "*", "+", ",", "-", ".", "/", " < ", "=", " > ", " ? ", "@", "[", "]", " ^ ", "_", "`", "{", "|", "}", "~"];
+var specialCharacters = ["!", "#", "$", "%", "&", "'", "(", ")", "*", "+", ",", "-", ".", "/", "<", "=", ">", "?", "@", "[", "]", "^", "_", "`", "{", "|", "}", "~"];
 
 // variable declaration
 var confirmLength = "";
@@ -97,13 +97,3 @@ function writePassword() {
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
-
-
-
-
-
-// var characters =["abcdefgijklmnopqrstuvwzyx0123456789!#$%&'()*+,-.:;<=>?@[]^_`{|}~ABCDEFGHIJKLMNOPQRSTUVWXYZ"];
-// var lower = ["abcdefgijklmnopqrstuvwzyx"];
-// var upper = ["ABCDEFGHIJKLMNOPQRSTUVWXYZ"];
-// var specailchar = ["!#$%&'()*+,-.:;<=>?@[]^_`{|}~"];
-// var numbers = ["0123456789"]
