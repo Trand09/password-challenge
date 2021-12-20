@@ -19,7 +19,7 @@ function generatePassword() {
   // prompt user for password length
   var confirmLength = window.prompt("How many character would you like you password? Choose betweeen 8 and 128")
 
-  // validate that the correct password length
+  // validate the correct password length
   if (confirmLength >= 8 || confirmLength <= 128) {
     // Repeat back how many characters the user will have
     alert("Password length must be between 8-128 characters! Try again");
@@ -27,22 +27,13 @@ function generatePassword() {
     
       if (confirmLength >= 8 || confirmLength <= 128) {
         alert("Your password will have " + confirmLength + " characters")
-      };
+      }
   }
-    
-
-  
-
 
   // ask what type of character type the user would like to include
   var confirmUpperCase = window.confirm("Click OK to confirm you would like to include Uppercase letters")
-  
   var confirmLowerCase = window.confirm("Click OK to confirm you would like to include Lowercase letters")
-  
-  // ask what type of character type the user would like to include
-  var confirmNumers = window.confirm("Click OK to confirm you would like to include numbers")
-  
-  // ask what type of character type the user would like to include
+  var confirmNumbers = window.confirm("Click OK to confirm you would like to include numbers")
   var confirmSpecialCharacters = window.confirm("Click OK to confirm you would like to include special characters")
 
   if (confirmUpperCase === false && confirmLowerCase === false && confirmNumbers === false && confirmSpecialCharacters === false) {
@@ -55,6 +46,7 @@ function generatePassword() {
 
   var passwordCharacters = []
 
+  // validate what characters will be included in password
   if (confirmUpperCase) {
     passwordCharacters = passwordCharacters.concat(alphaUpper);
   }
@@ -70,8 +62,6 @@ function generatePassword() {
   if (confirmSpecialCharacters) {
     passwordCharacters = passwordCharacters.concat(specialCharacters);
   }
-
-  console.log(passwordCharacters);
 
   // empty string to be filled based on for loop selecting random characters from the array
   var randomPassword = "";
